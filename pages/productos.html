@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="venta de neumaticos" />
+    <meta name="keywords" content="autos, camionetas, camion" />
+    <meta
+      name="author"
+      content="team4: Thiago Benjamin Fiol, Jose E. Navarro Bovi, Pablo Gonzalez, Ramiro velasquez y Santi Araoz Daniel E"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleModal.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/40791defe7ae13714611621d7a0ea114-corte-de-rueda-de-coche-moderno.png"
+    />
+    <title>Rolling Neumáticos - Productos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg text-bg-light p-3">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              class="img-fluid logo"
+              src="../img/logo.png"
+              alt="logo R-neumaticos"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex m-lg-4" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+            <button
+              class="btn btn-outline-success me-2 btn-nav"
+              title="Iniciar sesion"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalLogin"
+            >
+              <i class="bi bi-box-arrow-in-right"></i>
+            </button>
+            <button
+              class="btn btn-outline-success me-2 btn-nav"
+              title="Registrarse"
+            >
+              <a class="page-link" href="./registro.html"
+                ><i class="bi bi-person-add"></i
+              ></a>
+            </button>
+            <button class="btn btn-outline-success btn-nav" title="Carrito">
+              <a class="page-link" href="./carrito.html">
+                <i class="bi bi-cart4"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="CarruselMotosYAutos" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#CarruselMotosYAutos"
+            data-bs-slide-to="0"
+            aria-current="true"
+            class="active"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#CarruselMotosYAutos"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/carruselAuto.jpg"
+              class="d-block w-100 imgCarouselOferta"
+              alt="imagen de auto"
+            />
+            <article class="carousel-caption d-none d-md-block">
+              <h5 class="display-4">Para autos</h5>
+              <p class="fs-3">encuentra para todos los autos</p>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/carruselMoto.jpg"
+              class="d-block w-100 imgCarouselOferta"
+              alt="imagen de moto"
+            />
+            <article class="carousel-caption d-none d-md-block">
+              <h5 class="display-4">Para motos</h5>
+              <p class="fs-3">encuentra para todos los motos</p>
+            </article>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#CarruselMotosYAutos"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#CarruselMotosYAutos"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <section class="bg-light">
+        <div class="container py-5">
+          <div class="row">
+            <article class="col-lg-8">
+              <h5 class="display-5 text-center">
+                Tenemos el neumático que buscas, a un precio inigualable.
+                Nuestras ruedas son exportadas a todo el mundo, siendo Europa,
+                USA y Japón, nuestros principales clientes.
+              </h5>
+            </article>
+            <div class="col-lg-4 anuncioPC">
+              <div>
+                <a href="https://www.ford.com.ar/" target="_blank"
+                  ><img
+                    src="../img/ranger.jpeg"
+                    alt="Imagen de auto Ford"
+                    class="img-fluid rounded-top-5"
+                /></a>
+              </div>
+              <div class="bg-dark anuncio-redondeado">
+                <p class="fs-3 text-center text-light">
+                  Encontra tus mejores autos en
+                  <a
+                    href="https://www.ford.com.ar/"
+                    class="link-primary link-underline-opacity-75-hover link-underline-opacity-0"
+                    >Ford</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5 bg-light">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div class="card text-center h-100">
+              <div class="card-header bg-dark">
+                <p class="text-light mt-3 fs-3 modeloF">DIABLO ROSSO III</p>
+              </div>
+              <div class="card-body bg-light">
+                <img
+                  src="../img/producto1.jpeg"
+                  alt="neumatico diablo rosso iii"
+                  class="w-100"
+                />
+              </div>
+              <div class="card-footer bg-dark cardFooterDiv">
+                <p class="text-light">
+                  El neumático deportivo para uso en carretera, predecesor del
+                  DIABLO ROSSO IV
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ModalDiabloRosso3"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div class="card text-center h-100">
+              <div class="card-header bg-dark">
+                <p class="text-light mt-3 fs-3 modeloF">SCORPION TRAIL II</p>
+              </div>
+              <div class="card-body bg-light">
+                <img
+                  src="../img/producto2.jpeg"
+                  alt="neumatico scorpion trail ii"
+                  class="w-100"
+                />
+              </div>
+              <div class="card-footer bg-dark cardFooterDiv">
+                <p class="text-light">
+                  Un equipo deportivo de turismo con capacidad para caminos de
+                  tierra
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ModalScorpionTrail2"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div class="card text-center h-100">
+              <div class="card-header bg-dark modeloF">
+                <p class="text-light mt-3 fs-3">DIABLO ROSSO IV</p>
+              </div>
+              <div class="card-body bg-light">
+                <img
+                  src="../img/producto3.jpeg"
+                  alt="neumatico diablo rosso iv"
+                  class="w-100"
+                />
+              </div>
+              <div class="card-footer bg-dark cardFooterDiv">
+                <p class="text-light">
+                  El neumático deportivo definitivo para uso en carretera
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ModalProductos"
+                  onclick="location.href='./error404.html'"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div class="card text-center">
+              <div class="card-header bg-dark">
+                <p class="text-light mt-3 fs-3 modeloF">SCORPION-AT</p>
+              </div>
+              <div class="card-body bg-light">
+                <img
+                  src="../img/SCORPION-AT.png"
+                  alt="neumatico scorpion at"
+                  class="w-100"
+                />
+              </div>
+              <div class="card-footer bg-dark cardFooterDiv">
+                <p class="text-light">
+                  Neumático todoterreno con gran versatilidad de uso en todo
+                  tipo de situaciones
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalScorpionAt"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div class="card text-center">
+              <div class="card-header bg-dark">
+                <p class="text-light mt-3 fs-3 modeloF">SCORPION-ATR</p>
+              </div>
+              <div class="card-body bg-light">
+                <img
+                  src="../img/SCORPION-ATR.png"
+                  alt="neumatico scorpion atr"
+                  class="w-100"
+                />
+              </div>
+              <div class="card-footer bg-dark cardFooterDiv">
+                <p class="text-light">
+                  El idolo de verano y numero uno en ventas, la mejor rueda de
+                  la actualidad
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ModalScorpionAtr"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div class="card text-center">
+              <div class="card-header bg-dark">
+                <p class="text-light mt-3 fs-3 modeloF">TR999-1</p>
+              </div>
+              <div class="card-body bg-light">
+                <img
+                  src="../img/TR999-1.png"
+                  alt="neumatico tr999"
+                  class="w-100"
+                />
+              </div>
+              <div class="card-footer bg-dark cardFooterDiv">
+                <p class="text-light">
+                  Garantiza un comportamiento deportivo en carretera, así como
+                  una excelente conducción todoterreno
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTr99"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div class="card text-center h-100">
+              <div class="card-header bg-dark">
+                <p class="text-light mt-3 fs-3 modeloF">A/T 697</p>
+              </div>
+              <div class="card-body bg-light">
+                <img
+                  src="../img/DuelerAT697.jpg"
+                  alt="neumatico 697"
+                  class="img-fluid w-50"
+                />
+              </div>
+              <div class="card-footer bg-dark cardFooterDiv">
+                <p class="text-light">
+                  Vida útil superior, mayor resistencia al corte y opción número
+                  uno para aventuras
+                </p>
+
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ModalAt697"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+            <div class="card text-center h-100">
+              <div class="card-header bg-dark">
+                <p class="text-light mt-3 fs-3 modeloF">AT694</p>
+              </div>
+              <div class="card-body bg-light imgComplicada">
+                <img
+                  src="../img/Bridgestoneht470.png"
+                  alt="neumatico 694"
+                  class="img-fluid w-50"
+                />
+              </div>
+              <div class="card-footer bg-dark h-100">
+                <p class="text-light">
+                  Diseño AT para uso mixto: Asfalto 60% / fuera de camino 40%
+                  Amplios canales en bloques de hombros Tecnología UNI-T
+                </p>
+
+                <button
+                  type="button"
+                  class="btn btn-primary mb-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ModalProductos"
+                  onclick="location.href='./error404.html'"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center">
+        <h2>Busca en Secciones</h2>
+        <div class="accordion accordion-flush" id="accordionFlushProducto">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button bg-secondary-subtle bg-gradient text-dark collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                MOTOS
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushProducto"
+            >
+              <section class="position-relative">
+                <article class="position-absolute TextPre rueda-texto">
+                  <h5 class="text-light display-4 text-center">Motos</h5>
+                </article>
+
+                <img
+                  src="../img/ruedaPre.jpeg"
+                  alt="neumatico banner"
+                  class="ruedaPre"
+                />
+              </section>
+              <section class="container my-5">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <div class="card text-center">
+                      <div class="card-header bg-dark">
+                        <p class="text-light mt-3 fs-3 modeloF">
+                          DIABLO ROSSO III
+                        </p>
+                      </div>
+                      <div class="card-body bg-light">
+                        <img
+                          src="../img/producto1.jpeg"
+                          alt="neumatico diablo rosso iii"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="card-footer bg-dark cardFooterDiv">
+                        <p class="text-light">
+                          El neumático deportivo para uso en carretera,
+                          predecesor del DIABLO ROSSO IV
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-primary mb-2"
+                          data-bs-toggle="modal"
+                          data-bs-target="#ModalDiabloRosso3"
+                        >
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <div class="card text-center">
+                      <div class="card-header bg-dark">
+                        <p class="text-light mt-3 fs-3 modeloF">
+                          SCORPION TRAIL II
+                        </p>
+                      </div>
+                      <div class="card-body bg-light">
+                        <img
+                          src="../img/producto2.jpeg"
+                          alt="neumatico scorpion trail ii"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="card-footer bg-dark cardFooterDiv">
+                        <p class="text-light">
+                          Un equipo deportivo de turismo con capacidad para
+                          caminos de tierra
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-primary mb-2"
+                          data-bs-toggle="modal"
+                          data-bs-target="#ModalScorpionTrail2"
+                        >
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <div class="card text-center">
+                      <div class="card-header bg-dark">
+                        <p class="text-light mt-3 fs-3 modeloF">
+                          DIABLO ROSSO IV
+                        </p>
+                      </div>
+                      <div class="card-body bg-light">
+                        <img
+                          src="../img/producto3.jpeg"
+                          alt="neumatico diablo rosso iv"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="card-footer bg-dark cardFooterDiv">
+                        <p class="text-light">
+                          El neumático deportivo definitivo para uso en
+                          carretera
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-primary mb-2"
+                          data-bs-toggle="modal"
+                          data-bs-target="#ModalProductos"
+                          onclick="location.href='./error404.html'"
+                        >
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-secondary-subtle bg-gradient"
+                type="button "
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+                aria-controls="collapseTwo"
+              >
+                AUTOS
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushProducto"
+            >
+              <section class="position-relative">
+                <article class="position-absolute TextPre rueda-texto">
+                  <h5 class="text-light display-4 text-center">Autos</h5>
+                </article>
+                <img
+                  src="../img/ruedaPre.jpeg"
+                  alt="rueda banner"
+                  class="ruedaPre"
+                />
+              </section>
+              <section class="container my-5">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <div class="card text-center h-100">
+                      <div class="card-header bg-dark">
+                        <p class="text-light mt-3 fs-3 modeloF">SCORPION-AT</p>
+                      </div>
+                      <div class="card-body bg-light">
+                        <img
+                          src="../img/SCORPION-AT.png"
+                          alt="neumatico Scorpion-AT"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="card-footer bg-dark cardFooterDiv">
+                        <p class="text-light">
+                          Neumático todoterreno con gran versatilidad de uso en
+                          todo tipo de situaciones
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-primary mb-2"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalScorpionAt"
+                        >
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <div class="card text-center h-100">
+                      <div class="card-header bg-dark">
+                        <p class="text-light mt-3 fs-3 modeloF">SCORPION-ATR</p>
+                      </div>
+                      <div class="card-body bg-light">
+                        <img
+                          src="../img/SCORPION-ATR.png"
+                          alt="neumatico scorpion atr"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="card-footer bg-dark cardFooterDiv">
+                        <p class="text-light">
+                          El ídolo de verano y numero uno en ventas, la mejor
+                          rueda de la actualidad
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-primary mb-2"
+                          data-bs-toggle="modal"
+                          data-bs-target="#ModalProductos"
+                          onclick="location.href='./error404.html'"
+                        >
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <div class="card text-center h-100">
+                      <div class="card-header bg-dark">
+                        <p class="text-light mt-3 fs-3 modeloF">TR999-1</p>
+                      </div>
+                      <div class="card-body bg-light">
+                        <img
+                          src="../img/TR999-1.png"
+                          alt="neumatico tr999"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="card-footer bg-dark">
+                        <p class="text-light">
+                          Garantiza un comportamiento deportivo en carretera,
+                          así como una excelente conducción todoterreno
+                        </p>
+                        <button
+                          type="button"
+                          class="btn btn-primary mb-2"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalTr99"
+                        >
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed bg-secondary-subtle bg-gradient"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="true"
+                aria-controls="collapseThree"
+              >
+                CAMIONETAS
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushProducto"
+            >
+              <section class="position-relative">
+                <article class="position-absolute TextPre rueda-texto">
+                  <h5 class="text-light display-4 text-center">CAMIONETAS</h5>
+                </article>
+
+                <img
+                  src="../img/banner4x4.jpg"
+                  alt="banner 4x4"
+                  class="ruedaPre"
+                />
+              </section>
+              <section class="container my-5">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <div class="card text-center">
+                      <div class="card-header bg-dark">
+                        <p class="text-light mt-3 fs-3 modeloF">A/T 697</p>
+                      </div>
+                      <div class="card-body bg-light">
+                        <img
+                          src="../img/DuelerAT697.jpg"
+                          alt="neumatico 697"
+                          class="img-fluid w-50"
+                        />
+                      </div>
+                      <div class="card-footer bg-dark cardFooterDiv">
+                        <p class="text-light">
+                          Vida útil superior, mayor resistencia al corte y
+                          opción numero uno para aventuras
+                        </p>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary mb-2"
+                          data-bs-toggle="modal"
+                          data-bs-target="#ModalAt697"
+                        >
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 my-5">
+                    <div class="card text-center">
+                      <div class="card-header bg-dark">
+                        <p class="text-light mt-3 fs-3 modeloF">AT694</p>
+                      </div>
+                      <div class="card-body bg-light imgComplicada">
+                        <img
+                          src="../img/Bridgestoneht470.png"
+                          alt="neumatico 694"
+                          class="img-fluid w-50"
+                        />
+                      </div>
+                      <div class="card-footer bg-dark">
+                        <p class="text-light">
+                          Diseño AT para uso mixto: Asfalto 60% / fuera de
+                          camino 40% Amplios canales en bloques de hombros
+                          Tecnología UNI-T
+                        </p>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary mb-2"
+                          data-bs-toggle="modal"
+                          data-bs-target="#ModalProductos"
+                          onclick="location.href='./error404.html'"
+                        >
+                          Ver más
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade"
+      id="ModalDiabloRosso3"
+      tabindex="-1"
+      aria-labelledby="ModalDiabloRosso3"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+            <h5 class="modal-title text-light" id="ModalDiabloRosso3">
+              DIABLO ROSSO III
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-light">
+            <img
+              src="../img/producto1.jpeg"
+              alt="rueda Diablo rosso 3"
+              class="w-100"
+            />
+            <p class="text-bg-warning mt-3 d-inline display-6">$ 44.500</p>
+            <div class="accordion my-3" id="acordeonProducto">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneModal"
+                    aria-expanded="true"
+                    aria-controls="collapseOneModal"
+                  >
+                    Descripción del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseOneModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >El Neumático Deportivo Definitivo: DIABLO ROSSO
+                      III</strong
+                    >
+                    <p>
+                      ¡Bienvenido a la cima del rendimiento en carretera con el
+                      neumático DIABLO ROSSO III! <br />
+                      Diseñado para los amantes de la velocidad y la adrenalina,
+                      este neumático deportivo combina una innovadora tecnología
+                      con una estética impresionante para ofrecerte una
+                      experiencia de conducción inigualable.<br />
+                    </p>
+                    <ul>
+                      <li>Agarre Insuperable:</li>
+                      <strong>El DIABLO ROSSO III</strong>
+                      se adhiere a la carretera como si estuviera pegado a ella,
+                      gracias a su compuesto de goma de última generación.<br />
+                      <li>
+                        Diseño Aerodinámico: Su diseño elegante y aerodinámico
+                        no solo mejora la estética de tu moto, sino que también
+                        reduce la resistencia al viento, permitiéndote alcanzar
+                        velocidades vertiginosas con facilidad. <br />
+                      </li>
+                      <li>
+                        Control Preciso: Este neumático ofrece una respuesta de
+                        dirección excepcional. Te sentirás conectado a la
+                        carretera en todo momento, permitiéndote dominar cada
+                        curva y experimentar la emoción de una conducción
+                        precisa y controlada. <br />
+                      </li>
+                      <li>
+                        Durabilidad Inigualable: El
+                        <strong>DIABLO ROSSO III</strong> está construido para
+                        durar, incluso en condiciones de uso extremo. <br />
+                      </li>
+                      <li>
+                        La Elección de los Verdaderos Apasionados: Si eres un
+                        motociclista apasionado que busca lo mejor en
+                        rendimiento, control y estilo, el
+                        <strong>DIABLO ROSSO III</strong>es tu elección.
+                        Convierte cada viaje en una experiencia emocionante y
+                        lleva tu conducción al siguiente nivel con estos
+                        neumáticos deportivos de alta gama. Domina la carretera
+                        con confianza y estilo. ¡Experimenta la leyenda con el
+                        <strong>DIABLO ROSSO III!</strong>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoModal"
+                    aria-expanded="false"
+                    aria-controls="collapseTwoModal"
+                  >
+                    Desempeño del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwoModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="my-4"><p>Seco</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Seco"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-seco-1">95%</div>
+                    </div>
+                    <div class="my-4"><p>Mojado</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Mojado"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-mojado-1">70%</div>
+                    </div>
+                    <div class="my-4"><p>Kilometraje</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Kilometraje"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-km-1">85%</div>
+                    </div>
+                    <div class="my-4"><p>Comfort</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Comfort"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-comfort-1">95%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThreeModal"
+                    aria-expanded="false"
+                    aria-controls="collapseThreeModal"
+                  >
+                    Comentarios de nuestros Usuarios
+                  </button>
+                </h2>
+                <div
+                  id="collapseThreeModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row border border-dark-subtle">
+                        <div class="col-2">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5 class="">Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El Diablo Rosso III es simplemente impresionante.
+                            Con él, mi moto se siente como una extensión de mi
+                            cuerpo en cada curva. ¡Pura emoción en la carretera!
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 mb-1">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            Este neumático es la clave para dominar las
+                            carreteras mojadas. El Diablo Rosso III tiene un
+                            agarre fenomenal bajo la lluvia, lo que me da una
+                            gran confianza en cada viaje.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 my-3">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            He probado muchos neumáticos deportivos, pero el
+                            Diablo Rosso III supera mis expectativas. Ofrece una
+                            increíble estabilidad a altas velocidades y un
+                            manejo preciso. ¡Mi elección número uno!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="location.href='./carrito.html'"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ModalScorpionAtr"
+      tabindex="-1"
+      aria-labelledby="ModalScorpionAtr"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+            <h5 class="modal-title text-light" id="ModalScorpionAtr">
+              SCORPION-ATR
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-light">
+            <img
+              src="../img/SCORPION-ATR.png"
+              alt="rueda Diablo rosso 3"
+              class="w-100"
+            />
+            <p class="text-bg-warning mt-3 d-inline display-6">$ 300.400</p>
+            <div class="accordion my-3" id="acordeonProducto">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneModal"
+                    aria-expanded="true"
+                    aria-controls="collapseOneModal"
+                  >
+                    Descripción del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseOneModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <strong>El Neumático Líder en Ventas: Scorpion ATR</strong>
+                    <p>
+                      Con una trayectoria impecable y una legión de conductores
+                      satisfechos respaldándolo, este neumático es la elección
+                      preferida para una amplia variedad de vehículos y estilos
+                      de conducción.
+                      <br />
+                    </p>
+                    <ul>
+                      <li>
+                        Versatilidad Inigualable:
+                        <strong>El Scorpion ATR</strong>
+                        es conocido por su versatilidad incomparable. Tanto si
+                        conduces en la ciudad como si te aventuras fuera de la
+                        carretera, este neumático se adapta a todas tus
+                        necesidades. Ofrece un rendimiento óptimo en una
+                        variedad de condiciones y terrenos.<br />
+                      </li>
+                      <li>
+                        Agarre y Estabilidad: Este neumático combina un agarre
+                        excepcional con una estabilidad sin igual. Ya sea en
+                        carreteras mojadas, secas o superficies accidentadas,
+                        puedes confiar en que el
+                        <strong>>Scorpion ATR</strong> mantendrá tu vehículo
+                        bajo control en todo momento.
+                        <br />
+                      </li>
+                      <li>
+                        Durabilidad de Clase Mundial: Los conductores confían en
+                        el <strong>Scorpion ATR</strong> por su durabilidad de
+                        clase mundial. Está diseñado para resistir el desgaste
+                        de la conducción diaria y las aventuras todoterreno.
+                        Puedes estar seguro de que te llevará lejos y durará
+                        mucho tiempo.<br />
+                      </li>
+                      <li>
+                        Diseño Moderno y Atractivo: El
+                        <strong>Scorpion ATR</strong> no solo ofrece un
+                        rendimiento impresionante, sino que también tiene un
+                        diseño moderno y atractivo que realza la estética de tu
+                        vehículo. Combina estilo y función de manera
+                        excepcional.<br />
+                      </li>
+                      <li>
+                        <strong>Scorpion ATR:</strong> El Número Uno en Ventas
+                        para Conductores Exigentes. Si buscas el equilibrio
+                        perfecto entre versatilidad, rendimiento y durabilidad,
+                        el Scorpion ATR es la elección definitiva. Únete a la
+                        comunidad de conductores satisfechos y experimenta la
+                        excelencia que solo el número uno en ventas puede
+                        ofrecer.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoModal"
+                    aria-expanded="false"
+                    aria-controls="collapseTwoModal"
+                  >
+                    Desempeño del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwoModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="my-4"><p>Seco</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Seco"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-seco-6">100%</div>
+                    </div>
+                    <div class="my-4"><p>Mojado</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Mojado"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-mojado-6">95%</div>
+                    </div>
+                    <div class="my-4"><p>Kilometraje</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Kilometraje"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-km-6">95%</div>
+                    </div>
+                    <div class="my-4"><p>Comfort</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Comfort"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-comfort-6">85%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThreeModal"
+                    aria-expanded="false"
+                    aria-controls="collapseThreeModal"
+                  >
+                    Comentarios de nuestros Usuarios
+                  </button>
+                </h2>
+                <div
+                  id="collapseThreeModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row border border-dark-subtle">
+                        <div class="col-2">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5 class="">Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El Scorpion ATR es el mejor neumático que he tenido.
+                            Funciona de maravilla en la ciudad y en caminos de
+                            tierra. Confiable, duradero y versátil.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 mb-1">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            Este neumático hace maravillas en condiciones
+                            difíciles. Lo probé en terrenos rocosos y arenosos,
+                            y nunca me decepcionó. Su durabilidad es
+                            impresionante.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 my-3">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El Scorpion ATR es el rey de la versatilidad. Lo uso
+                            en mi camioneta todo el tiempo y nunca falla. Un
+                            neumático que se destaca en todas las situaciones.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="location.href='./carrito.html'"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ModalScorpionTrail2"
+      tabindex="-1"
+      aria-labelledby="ModalScorpionTrail2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+            <h5 class="modal-title text-light" id="ModalScorpionTrail2">
+              SCORPION TRAIL II
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-light">
+            <img
+              src="../imG/producto2.jpeg"
+              alt="rueda Diablo rosso 3"
+              class="w-100"
+            />
+            <p class="text-bg-warning mt-3 d-inline display-6">$ 270.540</p>
+            <div class="accordion my-3" id="acordeonProducto">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneModal"
+                    aria-expanded="true"
+                    aria-controls="collapseOneModal"
+                  >
+                    Descripción del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseOneModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >La Versatilidad en Todo Terreno: Scorpion Trail
+                      II</strong
+                    >
+                    <p>
+                      La revolución en el mundo de los neumáticos para
+                      motocicleta<br />
+                      El Scorpion Trail II es el compañero definitivo para los
+                      amantes de las aventuras en carretera y los desafíos
+                      off-road. Diseñado para ofrecer un rendimiento excepcional
+                      tanto en pavimento como en terrenos de tierra, este
+                      neumático es la elección perfecta para quienes desean
+                      explorar nuevos horizontes.<br />
+                    </p>
+                    <ul>
+                      <li>Agarre sin Límites:</li>
+                      <strong>El Scorpion Trail II</strong>
+                      ofrece un agarre excepcional en una amplia variedad de
+                      condiciones. Ya sea en carreteras sinuosas o caminos de
+                      tierra, puedes confiar en su compuesto de goma de alta
+                      calidad para proporcionar un control inquebrantable.<br />
+                      <li>
+                        Turismo Deportivo con Actitud Aventurera: Este neumático
+                        combina la agresividad del deporte con la versatilidad
+                        del turismo. Su diseño robusto y su resistencia a la
+                        abrasión te permiten aventurarte más allá de los límites
+                        del asfalto sin sacrificar el rendimiento en carretera.
+                        <br />
+                      </li>
+                      <li>
+                        Confianza en Todas las Condiciones Meteorológicas: El
+                        <strong>Scorpion Trail II</strong> es tu aliado en
+                        cualquier clima. Su diseño de surcos profundos
+                        proporciona una evacuación eficiente del agua,
+                        garantizando un manejo estable incluso en condiciones de
+                        lluvia<br />
+                      </li>
+                      <li>
+                        Prepárate para lo Inexplorado: Ya sea que estés
+                        planificando un viaje de larga distancia o quieras
+                        explorar caminos sin pavimentar, el
+                        <strong>Scorpion Trail II</strong> es la elección
+                        definitiva. Descubre nuevas rutas y experimenta la
+                        libertad de la carretera abierta con la confianza de que
+                        tienes el mejor neumático para el trabajo.<br />
+                      </li>
+                      <li>
+                        <strong>Scorpion Trail II</strong>, donde el Asfalto
+                        Encuentra la Aventura en Tierra. No importa si estás en
+                        la carretera o fuera de ella, el Scorpion Trail II te
+                        llevará allá donde tu espíritu aventurero desee. Rompe
+                        las barreras y conquista cualquier terreno con este
+                        neumático versátil y resistente.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoModal"
+                    aria-expanded="false"
+                    aria-controls="collapseTwoModal"
+                  >
+                    Desempeño del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwoModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="my-4"><p>Seco</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Seco"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-seco-2">100%</div>
+                    </div>
+                    <div class="my-4"><p>Mojado</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Mojado"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-mojado-2">80%</div>
+                    </div>
+                    <div class="my-4"><p>Kilometraje</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Kilometraje"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-km-2">75%</div>
+                    </div>
+                    <div class="my-4"><p>Comfort</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Comfort"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-comfort-2">95%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThreeModal"
+                    aria-expanded="false"
+                    aria-controls="collapseThreeModal"
+                  >
+                    Comentarios de nuestros Usuarios
+                  </button>
+                </h2>
+                <div
+                  id="collapseThreeModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row border border-dark-subtle">
+                        <div class="col-2">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5 class="">Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El Scorpion Trail II es mi elección para aventuras
+                            en moto. Lo llevé a través de carreteras sinuosas y
+                            caminos de tierra, y su rendimiento nunca me
+                            decepciona.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 mb-1">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            Este neumático es un verdadero todoterreno. He
+                            explorado montañas, playas y carreteras con el
+                            Scorpion Trail II, y siempre me lleva con confianza
+                            y comodidad.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 my-3">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El Scorpion Trail II es el equilibrio perfecto entre
+                            rendimiento en carretera y off-road. Su agarre y
+                            durabilidad son impresionantes. ¡Un neumático
+                            versátil que nunca decepciona!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="location.href='./carrito.html'"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalScorpionAt"
+      tabindex="-1"
+      aria-labelledby="modalScorpionAt"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+            <h5 class="modal-title text-light" id="modalScorpionAt">
+              SCORPION-AT
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-light">
+            <img
+              src="../img/SCORPION-AT.png"
+              alt="rueda Diablo rosso 3"
+              class="w-100"
+            />
+            <p class="text-bg-warning mt-3 d-inline display-6 px-2">
+              $ 256.900
+            </p>
+            <div class="accordion my-3" id="acordeonProducto">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneModal"
+                    aria-expanded="true"
+                    aria-controls="collapseOneModal"
+                  >
+                    Descripción del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseOneModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <strong>Libertad Todoterreno Definida: Scorpion AT</strong>
+                    <p>
+                      Prepárate para conquistar cualquier terreno con el
+                      neumático todoterreno definitivo, el Scorpion AT<br />
+                      Este neumático está diseñado para ofrecer un rendimiento
+                      sobresaliente en una amplia variedad de condiciones, desde
+                      carreteras pavimentadas hasta caminos off-road
+                      desafiantes. Si buscas versatilidad y durabilidad sin
+                      compromisos, el Scorpion AT es tu elección.<br />
+                    </p>
+                    <ul>
+                      <li>Domina la Naturaleza:</li>
+                      <strong>El Scorpion AT</strong>
+                      se enfrenta a la naturaleza con valentía. Su diseño
+                      agresivo de la banda de rodadura proporciona un agarre
+                      superior en lodo, grava, arena y rocas, permitiéndote
+                      explorar terrenos difíciles con confianza.<br />
+                      <li>
+                        Durabilidad Inigualable: Este neumático está construido
+                        para resistir el desgaste y el abuso. Su carcasa
+                        resistente y su compuesto de goma duradero lo convierten
+                        en la elección perfecta para largos viajes y aventuras
+                        todoterreno.
+                        <br />
+                      </li>
+                      <li>
+                        Agarre en Todas las Estaciones:
+                        <strong>El Scorpion AT</strong> se adapta a todas las
+                        estaciones. Su diseño optimizado para la tracción en
+                        nieve y lluvia significa que puedes enfrentar
+                        condiciones adversas con seguridad y control<br />
+                      </li>
+                      <li>
+                        Diseño Robusto y Moderno:Su aspecto robusto y moderno es
+                        una declaración de intenciones: un neumático que combina
+                        resistencia y estilo. Encaja perfectamente en tu
+                        camioneta y le da un toque de aventura.<br />
+                      </li>
+                      <li>
+                        <strong>Scorpion AT</strong>, donde la Aventura y la
+                        Versatilidad se Encuentran. No importa si estás en la
+                        carretera o fuera de ella, el Scorpion AT te llevará
+                        allá donde tu espíritu aventurero desee. Rompe las
+                        barreras y conquista cualquier terreno con este
+                        neumático todoterreno versátil y resistente. La libertad
+                        todoterreno te espera con el Scorpion AT.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoModal"
+                    aria-expanded="false"
+                    aria-controls="collapseTwoModal"
+                  >
+                    Desempeño del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwoModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="my-4"><p>Seco</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Seco"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-seco-3">100%</div>
+                    </div>
+                    <div class="my-4"><p>Mojado</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Mojado"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-mojado-3">90%</div>
+                    </div>
+                    <div class="my-4"><p>Kilometraje</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Kilometraje"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-km-3">95%</div>
+                    </div>
+                    <div class="my-4"><p>Comfort</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Comfort"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-comfort-3">85%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThreeModal"
+                    aria-expanded="false"
+                    aria-controls="collapseThreeModal"
+                  >
+                    Comentarios de nuestros Usuarios
+                  </button>
+                </h2>
+                <div
+                  id="collapseThreeModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row border border-dark-subtle">
+                        <div class="col-2">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5 class="">Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El ScorpionAT es mi elección para aventuras
+                            todoterreno. Nunca me ha fallado en caminos
+                            difíciles. Robusto, resistente y confiable, es
+                            perfecto para cualquier terreno.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 mb-1">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            Increíble resistencia y durabilidad. El Scorpion-AT
+                            es mi compañero constante en viajes de camping y
+                            aventuras al aire libre. Siempre me lleva a donde
+                            quiero ir.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 my-3">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            Me siento seguro en cualquier terreno con el
+                            Scorpion-AT. Lodo, grava o asfalto, este neumático
+                            ofrece un agarre excepcional. Un todoterreno
+                            versátil que supera mis expectativas.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="location.href='./carrito.html'"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modalTr99"
+      tabindex="-1"
+      aria-labelledby="modalTr99"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+            <h5 class="modal-title text-light" id="modalTr99">TR999-1</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-light">
+            <img
+              src="../img/TR999-1.png"
+              alt="rueda Traingle 999-1"
+              class="w-100"
+            />
+            <p class="text-bg-warning mt-3 d-inline display-6 px-2">$ 52.000</p>
+            <div class="accordion my-3" id="acordeonProducto">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneModal"
+                    aria-expanded="true"
+                    aria-controls="collapseOneModal"
+                  >
+                    Descripción del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseOneModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >La Excelencia en Rendimiento Deportivo: Triangle
+                      999.</strong
+                    >
+                    <br />
+                    <p>
+                      Prepárate para experimentar el emocionante mundo de la
+                      velocidad y el rendimiento en carretera con el neumático
+                      deportivo Triangle 999.<br />
+                      Este neumático ha sido diseñado meticulosamente para
+                      satisfacer las demandas de los conductores apasionados por
+                      la velocidad y la precisión en la conducción.<br />
+                    </p>
+                    <ul>
+                      <li>
+                        Agarre en las Curvas:
+                        <strong>El Triangle 999</strong>
+                        se adhiere a la carretera como una segunda piel. Su
+                        compuesto de goma de alto rendimiento proporciona un
+                        agarre excepcional en las curvas, permitiéndote
+                        abordarlas con confianza y precisión.<br />
+                      </li>
+                      <li>
+                        Rendimiento a Altas Velocidades: ¿Sueñas con la emoción
+                        de las velocidades vertiginosas? El Triangle 999 está
+                        diseñado para ofrecer un rendimiento excepcional a altas
+                        velocidades, asegurando una conducción suave y estable
+                        en carreteras rectas y curvas.
+                        <br />
+                      </li>
+                      <li>
+                        Respuesta Rápida: La respuesta instantánea de dirección
+                        del <strong>Triangle 999</strong> te conecta
+                        directamente con la carretera. Cada movimiento del
+                        volante se traduce en una respuesta inmediata,
+                        brindándote un control total sobre tu automóvil.
+                        <br />
+                      </li>
+                      <li>
+                        Diseño Deportivo y Elegante:
+                        <strong>El Triangle 999</strong> no solo ofrece un
+                        rendimiento impresionante, sino que también tiene un
+                        diseño elegante que complementa la estética de tu
+                        automóvil deportivo. Su apariencia moderna y deportiva
+                        es un verdadero placer para la vista.<br />
+                      </li>
+                      <li>
+                        <strong>Triangle 999</strong>, donde el rendimiento se
+                        convierte en emoción. No importa si eres un conductor
+                        apasionado o un entusiasta del automovilismo, el
+                        Triangle 999 te llevará a nuevas alturas de rendimiento
+                        en carretera. Experimenta la emoción de la conducción
+                        deportiva con un neumático diseñado para la excelencia.
+                        El Triangle 999 te pone en control y te lleva más allá
+                        de tus límites en la carretera.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoModal"
+                    aria-expanded="false"
+                    aria-controls="collapseTwoModal"
+                  >
+                    Desempeño del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwoModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="my-4"><p>Seco</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Seco"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-seco-4">100%</div>
+                    </div>
+                    <div class="my-4"><p>Mojado</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Mojado"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-mojado-4">90%</div>
+                    </div>
+                    <div class="my-4"><p>Kilometraje</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Kilometraje"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-km-4">95%</div>
+                    </div>
+                    <div class="my-4"><p>Comfort</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Comfort"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-comfort-4">85%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThreeModal"
+                    aria-expanded="false"
+                    aria-controls="collapseThreeModal"
+                  >
+                    Comentarios de nuestros Usuarios
+                  </button>
+                </h2>
+                <div
+                  id="collapseThreeModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row border border-dark-subtle">
+                        <div class="col-2">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5 class="">Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El neumático Triangle 999 es mi elección
+                            indiscutible para un rendimiento deportivo en
+                            carretera. Agarre excepcional y control preciso,
+                            ¡una experiencia de conducción emocionante!
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 mb-1">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            Impresionado con la durabilidad del Triangle 999.
+                            Soporta los rigores de la conducción diaria y su
+                            diseño moderno lo hace destacar en mi automóvil. ¡Un
+                            gran neumático!
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 my-3">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            Rendimiento y estilo se unen en el Triangle 999. Mi
+                            automóvil se siente más ágil y seguro. Un neumático
+                            que combina la estética con un manejo excepcional en
+                            carretera.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="location.href='./carrito.html'"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ModalAt697"
+      tabindex="-1"
+      aria-labelledby="ModalAt697"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+            <h5 class="modal-title text-light" id="ModalAt697">A/T 697</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body bg-light">
+            <img
+              src="../img/DuelerAT697.jpg"
+              alt="rueda at697"
+              class="w-95 d-block mx-auto"
+            />
+            <p class="text-bg-warning mt-3 d-inline display-6 px-2">
+              $ 150.000
+            </p>
+            <div class="accordion my-3" id="acordeonProducto">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOneModal"
+                    aria-expanded="true"
+                    aria-controls="collapseOneModal"
+                  >
+                    Descripción del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseOneModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >Durabilidad Todoterreno Inigualable: A/T 697</strong
+                    >
+                    <br />
+                    <p>
+                      Prepárate para enfrentar cualquier desafío en la carretera
+                      y fuera de ella con el neumático todoterreno
+                      <strong>A/T 697.</strong>
+                      <br />
+                      Este neumático ha sido diseñado para aventureros que
+                      buscan una vida útil superior, resistencia inquebrantable
+                      y un rendimiento excepcional en terrenos variados.<br />
+                    </p>
+                    <ul>
+                      <li>
+                        Vida Útil que Dura:
+                        <strong>El A/T 697</strong>
+                        es sinónimo de durabilidad. Su construcción robusta y su
+                        compuesto de goma de alta resistencia garantizan una
+                        vida útil excepcional, lo que significa que puedes
+                        disfrutar de aventuras durante más tiempo sin
+                        preocuparte por reemplazar tus neumáticos.<br />
+                      </li>
+                      <li>
+                        Resistencia al Corte: Cuando se trata de terrenos
+                        difíciles, el
+                        <strong>A/T 697</strong> es tu mejor aliado. Su
+                        resistencia al corte y a la abrasión lo convierten en
+                        una opción confiable para enfrentar rocas, escombros y
+                        terrenos agrestes sin temor.
+                        <br />
+                      </li>
+                      <li>
+                        Estilo Resistente y Funcional: Su diseño robusto y
+                        funcional no solo se ve bien en tu camioneta, sino que
+                        también refleja su capacidad todoterreno. Este neumático
+                        está listo para enfrentar la naturaleza con estilo.
+                        <br />
+                      </li>
+                      <li>
+                        Aventuras Todoterreno sin Límites: ¿Te gustaría explorar
+                        senderos remotos, caminos de montaña o desiertos? El
+                        <strong>A/T 697</strong> es la opción número uno para
+                        aventuras. Su diseño de la banda de rodadura ofrece un
+                        agarre excepcional en terrenos mixtos, permitiéndote
+                        conquistar cualquier desafío todoterreno.<br />
+                      </li>
+                      <li>
+                        <strong>A/T 697</strong>: Donde la Durabilidad se
+                        Encuentra con la Aventura. No importa si estás
+                        explorando senderos sin marcar o simplemente buscas un
+                        neumático confiable para tu camioneta, el
+                        <strong>A/T 697</strong> te lleva más allá de los
+                        límites. Experimenta la resistencia y la versatilidad de
+                        un neumático diseñado para aventureros como tú.
+                        Aventuras todoterreno sin límites te esperan con el
+                        <strong>A/T 697</strong>.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwoModal"
+                    aria-expanded="false"
+                    aria-controls="collapseTwoModal"
+                  >
+                    Desempeño del neumático
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwoModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="my-4"><p>Seco</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Seco"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-seco-5">100%</div>
+                    </div>
+                    <div class="my-4"><p>Mojado</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Mojado"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-mojado-5">95%</div>
+                    </div>
+                    <div class="my-4"><p>Kilometraje</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Kilometraje"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-km-5">95%</div>
+                    </div>
+                    <div class="my-4"><p>Comfort</p></div>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="Desempeño Comfort"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div class="progress-bar bg-dark bar-comfort-5">85%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThreeModal"
+                    aria-expanded="false"
+                    aria-controls="collapseThreeModal"
+                  >
+                    Comentarios de nuestros Usuarios
+                  </button>
+                </h2>
+                <div
+                  id="collapseThreeModal"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#acordeonProducto"
+                >
+                  <div class="accordion-body">
+                    <div class="container">
+                      <div class="row border border-dark-subtle">
+                        <div class="col-2">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5 class="">Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El A/T 697 es un verdadero todoterreno. Lo llevé a
+                            terrenos difíciles y siempre respondió. Robusto y
+                            confiable, es perfecto para aventuras fuera de la
+                            carretera.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 mb-1">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            "Este neumático A/T 697 me ha llevado a lugares
+                            increíbles. Su resistencia y tracción en terrenos
+                            difíciles son impresionantes. Una elección perfecta
+                            para los amantes de la aventura.
+                          </p>
+                        </div>
+                        <hr />
+                        <div class="col-2 my-3">
+                          <i class="bi bi-person-circle iconoUsuario"></i>
+                        </div>
+                        <div class="col-10 my-3">
+                          <h5>Usuario anónimo</h5>
+                          <br />
+                          <p>
+                            El A/T 697 es mi compañero de viaje ideal. Atraviesa
+                            barro, rocas y arena con facilidad. Su durabilidad y
+                            rendimiento fuera de la carretera son insuperables.
+                            ¡Muy recomendado!
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="location.href='./carrito.html'"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-bg-light pt-3">
+      <section class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Neumáticos</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Autos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Camionetas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Camión</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Servicios</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Gomería</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Alineado</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Balanceo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Frenos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Mecánica</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Asistencia</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Consejos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Distribuidores</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Garantía</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-12 col-lg-6 text-lg-start mb-3 d-flex justify-content-center pb-lg-4"
+          >
+            <img
+              class="logo-footer"
+              src="../img/logo.png"
+              alt="logo R-neumaticos"
+            />
+          </div>
+
+          <div
+            class="col-md-12 col-lg-6 text-lg-start mb-3 d-flex justify-content-center"
+          >
+            <div>
+              <p>Siguenos en nuestras redes:</p>
+              <div class="d-flex justify-content-start redes">
+                <a href="./error404.html"
+                  ><i class="bi bi-instagram fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-facebook fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-twitter fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-linkedin fs-3 m-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <div class="container-fluid text-bg-light d-flex justify-content-center">
+        <p>&copy; Rolling Neumaticos 2023 - Todos los derechos reservados</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <div
+      class="modal fade"
+      id="ModalLogin"
+      tabindex="-1"
+      aria-labelledby="Modallo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title h5">Iniciar sesion</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="InputEmail1" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                  minlength="10"
+                  maxlength="320"
+                />
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="InputPassword1" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="InputPassword1"
+                  required
+                  minlength="8"
+                  maxlength="64"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Check1" />
+                <label class="form-check-label" for="Check1">Recordar</label>
+              </div>
+
+              <p>
+                Es tu primera vez?
+                <span><a href="./registro.html">Registrate</a></span>
+              </p>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary mx-3">
+                  Iniciar sesion
+                </button>
+                <button type="submit" class="btn btn-dark mx-3">
+                  <i class="bi bi-google"></i> Continuar con Google
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

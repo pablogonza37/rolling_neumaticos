@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="venta de neumaticos" />
+    <meta name="keywords" content="autos, camionetas, camion" />
+    <meta
+      name="author"
+      content="team4: Thiago Benjamin Fiol, Jose E. Navarro Bovi, Pablo Gonzalez, Ramiro velasquez y Santi Araoz Daniel E"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link
+    rel="shortcut icon"
+    href="../img/40791defe7ae13714611621d7a0ea114-corte-de-rueda-de-coche-moderno.png"
+  />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg text-bg-light p-3">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img class="img-fluid logo" src="../img/logo.png" alt="logo R-neumaticos"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex m-lg-4" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+            <button
+              class="btn btn-outline-success me-2 btn-nav"
+              title="Iniciar sesion"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalLogin"
+            >
+              <i class="bi bi-box-arrow-in-right"></i>
+            </button>
+            <button
+              class="btn btn-outline-success me-2 btn-nav"
+              title="Registrarse"
+            >
+              <a class="page-link" href="./registro.html"
+                ><i class="bi bi-person-add"></i
+              ></a>
+            </button>
+            <button class="btn btn-outline-success btn-nav" title="Carrito">
+              <a class="page-link" href="./carrito.html">
+                <i class="bi bi-cart4"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container-fluid seccion-form px-2 py-5">
+        <h1 class="h1 display-2 text-white text-center mb-5">Contáctenos</h1>
+        <div class="container border py-2 form">
+          <form class="m-3 p-3">
+            <div class="mb-3">
+              <label for="nombreyApellido" class="form-label text-white"
+                >Nombres y Apellido:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="nombreyApellido"
+                aria-describedby="emailHelp"
+                placeholder="ej: Juan Perez"
+                required
+                minlength="5"
+                maxlength="50"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label text-white">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Email"
+                placeholder="Ej: juanperez@.com"
+                required
+                minlength="10"
+                maxlength="320"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label text-white">Asunto:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Asunto"
+                aria-describedby="emailHelp"
+                placeholder="(opcional)"
+                minlength="5"
+                maxlength="50"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="consulta" class="form-label text-white"
+                >Consulta:</label
+              >
+              <textarea
+                class="form-control"
+                id="consulta"
+                rows="3"
+                required
+                placeholder="agregue aquí su consulta"
+                minlength="5"
+                maxlength="1000"
+              ></textarea>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheck"
+                required
+              />
+              <label class="form-check-label text-white" for="flexCheck">
+                Acepto la
+                <span class="text-warning text-i"
+                  ><a
+                    class="navbar-brand text-wrap"
+                    href="../pages/erro404.html"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalContacto"
+                    >Política de Privacidad.</a
+                  ></span
+                >
+              </label>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <section class="container py-5 h-auto">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  class="gmap_iframe"
+                  width="100%"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=rolling code&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+            <div class="inf-contacto text-bg-dark text-center p-4">
+              <h3 class="h3 mb-5 text-warning">información de contacto</h3>
+
+              <ul class="list-unstyled">
+                <li class="mb-4">
+                  <a
+                    href="./error404.html"
+                    class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                    ><i class="bi bi-whatsapp"> (381) 1234567</i></a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="./error404.html"
+                    class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                    ><i class="bi bi-whatsapp"> (381) 3894532</i></a
+                  >
+                </li>
+                <li class="mb-4">
+                  <a
+                    href="./error404.html"
+                    class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                    ><i class="bi bi-envelope-at-fill">
+                      r_neumaticos@.com</i
+                    ></a
+                  >
+                </li>
+                <li class="mb-4">
+                  <p
+                    href="./error404.html"
+                    class="link-light link-underline-opacity-0 link-underline-opacity-100-hover"
+                  >
+                    <i class="bi bi-geo-alt-fill">
+                      Gral. Paz 576, T4000 San Miguel de Tucumán, Tucumán,
+                      Argentina</i
+                    >
+                  </p>
+                </li>
+              </ul>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-light dropdown-toggle text-wrap"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Horarios de atencion
+                </button>
+                <ul class="dropdown-menu">
+                  <li><p class="dropdown-item">Lunes, 8 AM-9-PM</p></li>
+                  <li>
+                    <p class="dropdown-item">Martes, 8 AM-9 PM</p>
+                  </li>
+                  <li>
+                    <p class="dropdown-item">Miércoles, 8 AM-9 PM</p>
+                  </li>
+                  <li>
+                    <p class="dropdown-item">Jueves, 8 AM-9 PM</p>
+                  </li>
+                  <li>
+                    <p class="dropdown-item">Viernes, 8 AM-9 PM</p>
+                  </li>
+                  <li>
+                    <p class="dropdown-item">Sábado, 8 AM-1 PM</p>
+                  </li>
+                  <li><p class="dropdown-item">Domingo, Cerrado</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-bg-light pt-4">
+      <section class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Neumáticos</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Autos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Camionetas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Camión</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Servicios</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Gomería</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Alineado</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Balanceo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Frenos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Mecánica</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Asistencia</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Consejos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Distribuidores</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Garantía</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-12 col-lg-6 text-lg-start mb-3 d-flex justify-content-center pb-lg-4"
+          >
+            <img
+              class="logo-footer"
+              src="../img/logo.png"
+              alt="logo R-neumaticos"
+            />
+          </div>
+
+          <div
+            class="col-md-12 col-lg-6 text-lg-start mb-3 d-flex justify-content-center"
+          >
+            <div>
+              <p>Síguenos en nuestras redes:</p>
+              <div class="d-flex justify-content-center redes">
+                <a href="./error404.html"
+                  ><i class="bi bi-instagram fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-facebook fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-twitter fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-linkedin fs-3 m-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <div class="container-fluid text-bg-light d-flex justify-content-center">
+        <p>&copy; Rolling Neumáticos 2023 - Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <div
+      class="modal fade"
+      id="modalContacto"
+      tabindex="-1"
+      aria-labelledby="modalContactoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalContactoLabel">
+              Política de Privacidad
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h5>Política de Privacidad de [Nombre de la Empresa]</h5>
+            <h6>Última actualización: [03/10/23]</h6>
+            <p>
+              En [Rolling neumaticos] (en adelante, "nosotros", "nuestra", o "el
+              sitio web"), valoramos y respetamos tu privacidad. Esta Política
+              de Privacidad describe cómo recopilamos, utilizamos y protegemos
+              la información personal que puedas proporcionarnos a través de
+              nuestro sitio web, aplicaciones móviles y otros servicios
+              relacionados. Al utilizar nuestros servicios, aceptas los términos
+              y prácticas descritos en esta Política de Privacidad.
+            </p>
+            <h6>Información que Recopilamos</h6>
+            <p>
+              1. Información Personal: Podemos recopilar información personal
+              que nos proporcionas voluntariamente, como tu nombre, dirección de
+              correo electrónico, dirección postal, número de teléfono y otros
+              datos similares.
+            </p>
+            <p>
+              2. Información de Uso: Recopilamos información sobre cómo utilizas
+              nuestro sitio web y nuestros servicios, como las páginas que
+              visitas, las acciones que realizas y la duración de tu visita.
+            </p>
+            <p>
+              3. Información de Dispositivos: Podemos recopilar información
+              sobre tu dispositivo, incluyendo el tipo de dispositivo, la
+              dirección IP, el sistema operativo y el navegador web que
+              utilizas.
+            </p>
+            <h6>Cómo Utilizamos tu Información</h6>
+            <p>
+              Utilizamos la información recopilada para los siguientes
+              propósitos:
+            </p>
+            <p>
+              1. Proporcionar y Mantener Nuestros Servicios: Utilizamos tu
+              información para ofrecerte nuestros servicios, procesar tus
+              solicitudes y mantener la funcionalidad de nuestro sitio web y
+              aplicaciones
+            </p>
+            <p>
+              2. Comunicación: Podemos utilizar tu información para responder a
+              tus consultas, enviar actualizaciones, notificaciones y otra
+              información relacionada con nuestros servicios.
+            </p>
+            <p>
+              3. Mejorar Nuestros Servicios: Analizamos la información
+              recopilada para mejorar nuestros servicios, personalizar tu
+              experiencia y desarrollar nuevas características.
+            </p>
+            <p>
+              4. Marketing y Publicidad: Podemos utilizar tu información para
+              enviar comunicaciones de marketing y publicidad relacionadas con
+              nuestros productos y servicios, siempre que hayas dado tu
+              consentimiento previo.
+            </p>
+            <h6>Divulgación de Información</h6>
+            <p>
+              No compartimos tu información personal con terceros, excepto en
+              las siguientes situaciones:
+            </p>
+            <p>
+              1. Cuando sea necesario para cumplir con una obligación legal.
+            </p>
+            <p>
+              2. Con proveedores de servicios que necesiten acceder a tu
+              información para prestar servicios en nuestro nombre (por ejemplo,
+              procesadores de pagos).
+            </p>
+            <h6>Seguridad de la Información</h6>
+            <p>
+              Tomamos medidas razonables para proteger tu información personal
+              contra el acceso no autorizado o la divulgación. Sin embargo, no
+              podemos garantizar la seguridad absoluta de tus datos.
+            </p>
+            <h6>Tus Derechos de Privacidad</h6>
+            <p>
+              Tienes derechos sobre tu información personal, incluyendo el
+              derecho a acceder, corregir o eliminar tus datos. Si deseas
+              ejercer estos derechos, ponte en contacto con nosotros a través de
+              la información proporcionada al final de esta Política de
+              Privacidad.
+            </p>
+            <h6>Cambios en la Política de Privacidad</h6>
+            <p>
+              Nos reservamos el derecho de actualizar esta Política de
+              Privacidad en cualquier momento. Te recomendamos revisar esta
+              página periódicamente para mantenerte informado sobre cualquier
+              cambio
+            </p>
+            <p>
+              Si tienes preguntas o inquietudes sobre esta Política de
+              Privacidad, por favor, contáctanos a través de [correo electrónico
+              o dirección postal].
+            </p>
+            <p>
+              [rolling neumaticos] [ Gral. Paz 576, T4000 San Miguel de Tucumán]
+              [ (381) 1234567] [ r_neumaticos @.com]
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="ModalLogin"
+      tabindex="-1"
+      aria-labelledby="Modallo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title h5">Iniciar sesión</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="InputEmail1" class="form-label"
+                  >Correo electronico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                  minlength="10"
+                  maxlength="320"
+                />
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="InputPassword1" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="InputPassword1"
+                  required
+                  minlength="8"
+                  maxlength="64"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="Check1"
+                />
+                <label class="form-check-label" for="Check1"
+                  >Recordar</label
+                >
+              </div>
+
+              <p>
+                Es tu primera vez?
+                <span><a href="./registro.html">Registrate</a></span>
+              </p>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary mx-3">
+                  Iniciar sesión
+                </button>
+                <button type="submit" class="btn btn-dark mx-3">
+                  <i class="bi bi-google"></i> Continuar con Google
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

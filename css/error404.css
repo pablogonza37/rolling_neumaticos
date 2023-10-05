@@ -1,0 +1,76 @@
+/*imagen corregida*/
+.imagenRuedaPinchada {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+  
+  main {
+    background-image: url("../img/r-neumaticos.png");
+  }
+  
+  .seccion-form {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../img/r-neumaticos.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    filter: brightness(15%);
+  }
+  .form {
+    border-radius: 10px;
+    width: 35%;
+    backdrop-filter: blur(5px);
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .gmap_iframe {
+    height: 420px;
+  }
+  
+  .inf-contacto {
+    height: 100%;
+  }
+  
+  /* dispositivos sm */
+  @media all and (max-width: 767px) {
+    .form {
+      width: 100%;
+    }
+    .inf-contacto {
+      height: auto;
+      padding: 5px;
+    }
+    /*imagen corregida*/
+    .imagenRuedaPinchada {
+      object-fit: cover;
+      height: 300px;
+      width: 100%;
+    }
+  }
+  
+  /* dispositivos md */
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    .form {
+      width: 50%;
+    }
+  }
+  
+  /* dispositivos grandes lg */
+  
+  @media all and (min-width: 992px) {
+  }

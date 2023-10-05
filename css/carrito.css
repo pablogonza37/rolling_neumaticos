@@ -1,0 +1,24 @@
+main{
+    background: #f9f7f0; 
+}
+
+.img-producto {
+  width: 100px;
+  height: 130px;
+}
+
+.tabla {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn{
+  transition: all;
+  transition-duration: 600ms;
+}
+
+.btn:hover{
+   color: black;
+   background-color: #f9f7f0;
+}

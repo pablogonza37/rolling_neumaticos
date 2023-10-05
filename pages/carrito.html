@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="venta de neumaticos" />
+    <meta name="keywords" content="autos, camionetas, camion" />
+    <meta
+      name="author"
+      content="team4: Thiago Benjamin Fiol, Jose E. Navarro Bovi, Pablo Gonzalez, Ramiro velasquez y Santi Araoz Daniel E"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="shortcut icon"
+    href="../img/40791defe7ae13714611621d7a0ea114-corte-de-rueda-de-coche-moderno.png"
+  />
+    <link rel="stylesheet" href="../css/carrito.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Carrito de compras</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg text-bg-light p-3">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              class="img-fluid logo"
+              src="../img/logo.png"
+              alt="logo R-neumaticos"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex m-lg-4" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+            <button
+              class="btn btn-outline-success me-2 btn-nav"
+              title="Iniciar sesion"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalLogin"
+            >
+              <i class="bi bi-box-arrow-in-right"></i>
+            </button>
+            <button
+              class="btn btn-outline-success me-2 btn-nav"
+              title="Registrarse"
+            >
+              <a class="page-link" href="./registro.html"
+                ><i class="bi bi-person-add"></i
+              ></a>
+            </button>
+            <button
+              class="btn btn-outline-success btn-nav active"
+              title="Carrito"
+            >
+              <a class="page-link" href="../pages/carrito.html">
+                <i class="bi bi-cart4"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="container">
+        <h1 class="h1 display-5 my-5 text-center">
+          <i class="bi bi-cart4"></i>Carrito de compras
+        </h1>
+        <div class="row mt-5">
+          <div class="col-lg-8 col-md-12 mb-5">
+            <div class="table-responsive tabla">
+              <table class="table table-hover mb-0">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Eliminar</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row d-flex justify-content-center">
+                      <button
+                        type="button"
+                        class="btn btn-danger my-5"
+                        title="Eliminar"
+                      >
+                        <i class="bi bi-trash3"></i>
+                      </button>
+                    </th>
+                    <td>
+                      <img
+                        class="img-producto"
+                        src="../img/Pirelli-moto.png"
+                        alt="imagen del producto"
+                      />
+                    </td>
+                    <td>
+                      <h4>
+                        Pirelli Scorpion Trail II<span
+                          class="badge text-bg-secondary"
+                        >
+                          New</span
+                        >
+                      </h4>
+                      <p>Motocicleta</p>
+                      <p>Cubierta 170 60 17</p>
+                      <span class="text-warning">Envio Gratis</span>
+                    </td>
+                    <td>$270.540</td>
+                    <td>
+                      <select
+                        class="form-select form-select-sm w-100 text-center"
+                        aria-label="Disabled select"
+                        disabled
+                      >
+                        <option selected>2</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </td>
+                    <td><p class="text-center">$541.080</p></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <button
+                        type="button"
+                        class="btn btn-danger my-5"
+                        title="Eliminar"
+                      >
+                        <i class="bi bi-trash3"></i>
+                      </button>
+                    </th>
+                    <td>
+                      <img
+                        class="img-producto"
+                        src="../img/ruedaCamioneta.png"
+                        alt="imagen del producto"
+                      />
+                    </td>
+                    <td>
+                      <h4>Pirelli Scorpion All Terrain Plus</h4>
+                      <p>Camioneta</p>
+                      <p>Cubierta LT315/70R17</p>
+                      <span class="text-warning">Envio Gratis</span>
+                    </td>
+                    <td>$256.900</td>
+                    <td>
+                      <select
+                        class="form-select form-select-sm w-100 text-center"
+                        aria-label="Disabled select"
+                        disabled
+                      >
+                        <option selected>1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </td>
+                    <td><p class="text-center">$256.900</p></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <button
+                        type="button"
+                        class="btn btn-danger my-5"
+                        title="Eliminar"
+                      >
+                        <i class="bi bi-trash3"></i>
+                      </button>
+                    </th>
+                    <td>
+                      <img
+                        class="img-producto"
+                        src="../img//triangle_clipdrop-background-removal.png"
+                        alt="imagen del producto"
+                      />
+                    </td>
+                    <td>
+                      <h4>Triangle 155</h4>
+                      <p>Automóvil</p>
+                      <p>Cubierta R13 LT TR999Q 8PR</p>
+                      <span class="text-warning">Envío Gratis</span>
+                    </td>
+                    <td>$52.000</td>
+                    <td>
+                      <select
+                        class="form-select form-select-sm w-100 text-center"
+                        aria-label="Disabled select"
+                        disabled
+                      >
+                        <option selected>1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </td>
+                    <td><p class="text-center">$52.000</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 mb-5">
+            <div class="card">
+              <div class="card-header bg-dark">
+                <h4 class="h4 text-bg-dark">Resumen de compra</h4>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">Productos(3)</p>
+                  <span>$849.980</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p class="card-text">Envíos</p>
+                  <span class="text-warning">Gratis</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title">Total a pagar:</h5>
+                  <span>$849.980</span>
+                </div>
+                <a
+                  href="./error404.html"
+                  class="btn btn-primary my-2 me-2"
+                  >Finalizar Comprar
+                  <span class="badge text-bg-secondary">3</span></a
+                >
+                <a href="../pages/productos.html" class="btn btn-dark"
+                  >Continuar comprando</a
+                >
+              </div>
+            </div>
+
+            <div class="card my-4">
+              <div class="card-header bg-dark">
+                <h5 class="h5 text-bg-dark">Soporte</h5>
+              </div>
+              <div class="card-body">
+                <div class="accordion accordion-flush" id="acordeonSoporte">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Pagos
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#acordeonSoporte"
+                    >
+                      <div class="accordion-body">
+                        ACEPTAMOS PAGOS MEDIANTE LAS SIGUIENTES TARJETAS DE
+                        CRÉDITO: VISA, MASTERCARD, AMERICAN EXPRESS Y DISCOVER
+                        CARD. TAMBIÉN ACEPTAMOS TARJETAS DE DÉBITO CON EL
+                        LOGOTIPO DE VISA O MASTERCARD. ALTERNATIVAMENTE, TAMBIÉN
+                        PUEDES PAGAR CON AFTERPAY, APPLE PAY Y PAYPAL.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Envio y entrega
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#acordeonSoporte"
+                    >
+                      <div class="accordion-body">
+                        LA MAYORÍA DE LA MERCANCÍA SE ENVIARÁ DENTRO DE 7 A 10
+                        DÍAS HÁBILES DESPUÉS DE RECIBIR SU PEDIDO Y SE ENTREGARÁ
+                        DENTRO DE 3 A 6 DÍAS HÁBILES.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        Devoluciones y cambio
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingThree"
+                      data-bs-parent="#acordeonSoporte"
+                    >
+                      <div class="accordion-body">
+                        NOS COMPLACE ACEPTAR DEVOLUCIONES DE PRODUCTOS COMPRADOS
+                        QUE NO HAYAN SIDO USADOS O ALTERADOS, CON LAS ETIQUETAS
+                        AÚN COLOCADAS Y EN EL EMBALAJE ORIGINAL, DENTRO DE LOS
+                        30 DÍAS POSTERIORES A LA COMPRA. PARA CONOCER NUESTRA
+                        POLÍTICA COMPLETA DE CAMBIOS Y DEVOLUCIONES, VISITE
+                        NUESTRAS PREGUNTAS FRECUENTES.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-bg-light pt-4">
+      <section class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Neumáticos</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Autos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Camionetas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Camión</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Servicios</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Gomería</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Alineado</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Balanceo</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Frenos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Mecánica</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-4 text-center">
+            <h4>Asistencia</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Consejos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Distribuidores</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./error404.html"
+                  class="link-dark link-underline-opacity-0 link-underline-opacity-25-hover"
+                  >Garantía</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-12 col-lg-6 text-lg-start mb-3 d-flex justify-content-center pb-lg-4"
+          >
+            <img
+              class="logo-footer"
+              src="../img/logo.png"
+              alt="logo R-neumaticos"
+            />
+          </div>
+
+          <div
+            class="col-md-12 col-lg-6 text-lg-start mb-3 d-flex justify-content-center"
+          >
+            <div>
+              <p>Síguenos en nuestras redes:</p>
+              <div class="d-flex justify-content-center redes">
+                <a href="./error404.html"
+                  ><i class="bi bi-instagram fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-facebook fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-twitter fs-3 m-2"></i
+                ></a>
+                <a href="./error404.html"
+                  ><i class="bi bi-linkedin fs-3 m-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <div class="container-fluid text-bg-light d-flex justify-content-center">
+        <p>&copy; Rolling Neumáticos 2023 - Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <div
+      class="modal fade"
+      id="ModalLogin"
+      tabindex="-1"
+      aria-labelledby="modalLogin"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title h5">Iniciar sesión</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="InputEmail1" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="InputEmail1"
+                  aria-describedby="emailHelp"
+                  required
+                  minlength="10"
+                  maxlength="320"
+                />
+                <div id="emailHelp" class="form-text"></div>
+              </div>
+              <div class="mb-3">
+                <label for="InputPassword1" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="InputPassword1"
+                  required
+                  minlength="8"
+                  maxlength="64"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="Check1" />
+                <label class="form-check-label" for="Check1">Recordar</label>
+              </div>
+              <p>
+                Es tu primera vez?
+                <span><a href="./registro.html">Registrate</a></span>
+              </p>
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary mx-3">
+                  Iniciar sesión
+                </button>
+                <button type="submit" class="btn btn-dark mx-3">
+                  <i class="bi bi-google"></i> Continuar con Google
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
